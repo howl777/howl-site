@@ -1,109 +1,101 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <title>howl</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      color: white;
-      text-align: center;
-      overflow: hidden;
-    }
+<meta charset="UTF-8">
+<title>howl</title>
 
-    /* Фон */
-    .background {
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      background: url('bg.jpg') no-repeat center center/cover;
-      filter: brightness(0.45);
-      z-index: -2;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
 
-    /* Ник на фоне */
-    .overlay {
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-      opacity: 0.06;
-      font-size: 60px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-content: center;
-    }
+.background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: url('bg.jpg') no-repeat center center/cover;
+  filter: brightness(0.45);
+  z-index: -2;
+}
 
-    .overlay span {
-      margin: 25px;
-      animation: float 6s infinite ease-in-out;
-    }
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.06;
+  font-size: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
 
-    @keyframes float {
-      0% { transform: translateY(0px); }
-      50% { transform: translateY(-10px); }
-      100% { transform: translateY(0px); }
-    }
+.overlay span {
+  margin: 25px;
+  animation: float 6s infinite ease-in-out;
+}
 
-    /* Контент */
-    .container {
-      margin-top: 120px;
-      backdrop-filter: blur(8px);
-    }
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
 
-    h1 {
-      font-size: 50px;
-      margin-bottom: 10px;
-      text-shadow: 0 0 15px rgba(255,255,255,0.6);
-    }
+.container {
+  margin-top: 120px;
+}
 
-    .username {
-      opacity: 0.8;
-      margin-bottom: 30px;
-    }
+h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
 
-    .btn {
-      display: block;
-      width: 260px;
-      margin: 15px auto;
-      padding: 15px;
-      background: rgba(0,0,0,0.6);
-      border: 2px solid white;
-      border-radius: 12px;
-      text-decoration: none;
-      color: white;
-      transition: 0.3s;
-    }
+.btn {
+  display: block;
+  width: 260px;
+  margin: 15px auto;
+  padding: 15px;
+  background: rgba(0,0,0,0.6);
+  border: 2px solid white;
+  border-radius: 12px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
 
-    .btn:hover {
-      background: white;
-      color: black;
-      transform: scale(1.05);
-    }
-  </style>
+.btn:hover {
+  background: white;
+  color: black;
+  transform: scale(1.05);
+}
+</style>
 </head>
+
 <body>
 
 <div class="background"></div>
 
 <div class="overlay">
-  <script>
-    for (let i = 0; i < 60; i++) {
-      document.write("<span>howl</span>");
-    }
-  </script>
+<script>
+for (let i = 0; i < 60; i++) {
+  document.write("<span>howl</span>");
+}
+</script>
 </div>
 
 <div class="container">
-  <h1>howl</h1>
-  <div class="username">@howl_god</div>
+<h1>howl</h1>
 
-  <a class="btn" href="https://t.me/tgkhowl777" target="_blank">Telegram</a>
-  <a class="btn" href="https://discord.gg/6xBp75QH" target="_blank">Discord</a>
-  <a class="btn" href="https://www.twitch.tv/howl_god" target="_blank">Twitch</a>
+<a class="btn" href="https://t.me/tgkhowl777">Telegram</a>
+<a class="btn" href="https://discord.gg/6xBp75QH">Discord</a>
+<a class="btn" href="https://www.twitch.tv/howl_god">Twitch</a>
 
+<a class="btn" href="about.html">Обо мне</a>
 </div>
 
 </body>
