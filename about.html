@@ -7,16 +7,16 @@
 <style>
 body {
   margin: 0;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   color: white;
   text-align: center;
   background: url('bg.jpg') no-repeat center center/cover;
-  background-size: cover;
+  min-height: 100vh;
 }
 
 .box {
   margin-top: 120px;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0, 0, 0, 0.6);
   display: inline-block;
   padding: 30px;
   border-radius: 15px;
@@ -24,7 +24,7 @@ body {
   text-align: left;
 }
 
-h1 {
+h1, h2 {
   text-align: center;
 }
 
@@ -33,22 +33,20 @@ p {
   font-size: 16px;
 }
 
-a {
+.button {
   color: white;
   display: block;
-  margin-top: 20px;
+  margin: 20px auto 0;
   text-decoration: none;
   border: 1px solid white;
   padding: 10px;
   border-radius: 10px;
-  width: 150px;
+  width: 200px;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
   transition: 0.3s;
 }
 
-a:hover {
+.button:hover {
   background: white;
   color: black;
 }
@@ -58,6 +56,7 @@ a:hover {
 <body>
 
 <div class="box">
+
 <h1>Обо мне</h1>
 
 <p>
@@ -68,13 +67,29 @@ a:hover {
 
 Сейчас забросил частые игры в Dota и перешёл на стримы, ТГК, турниры, конкурсы, коучинг и розыгрыши.<br><br>
 
-Заказать коучинг на любую позицию вы можете по контакту: <b>@howl_god</b><br>
-Также если у вас есть предложения — <b>@howl_god</b><br><br>
+Заказать коучинг на любую позицию вы можете по контакту:
+<b>@howl_god</b><br>
+
+Также если у вас есть предложения —
+<b>@howl_god</b><br><br>
 
 Всем удачи!
 </p>
 
-<a href="index.html">Назад</a>
+<h2>Мои проекты</h2>
+
+<p>
+Telegram проект howl:
+</p>
+
+<a class="button" href="https://t.me/projecthowl" target="_blank">
+Перейти в Telegram
+</a>
+
+<a class="button" href="index.html">
+Назад
+</a>
+
 </div>
 
 </body>
